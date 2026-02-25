@@ -6,6 +6,7 @@ import { GitSearch } from './pages/GitSearch'
 import { Home } from './pages/Home'
 import { Error } from './pages/Error'
 import { NavBar } from './components/NavBar'
+import { PokeList } from './pages/PokeList'
 import './App.css'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/git-search' element={<GitSearch />} />
             <Route path='*' element={<Error />} />
+            <Route path='/poke-list'  element={<PokeList/>} />
           </Routes>
         </HashRouter>
       </main>
